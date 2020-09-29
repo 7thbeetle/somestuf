@@ -1,16 +1,13 @@
 __author__ = "Kuzey Rodoplu"
 
 import time
-import locale
 
 
-locale.setlocale(locale.LC_ALL, 'english')
 epoch = time.localtime()
 print("\n" * 500)
 
 
 ## Sayaçlar başlıyor
-
 ## -------------------------------------------------------------------------
 year = epoch.tm_year
 month = epoch.tm_mon
@@ -100,7 +97,7 @@ print("⬛" * (year % 100), "⬜" * (100 - (year % 100)), "\n{} years left to ne
 
 
 ## Next Millennium bölümü
-print("⬛" * ((year % 1000) // 10), "⬜" * ((1000 - (year % 1000)) // 10), "\n{} years left to next decade\n".format(1000 - (year % 1000)), sep="")
+print("⬛" * ((year % 1000) // 10), "⬜" * ((1000 - (year % 1000)) // 10), "\n{} years left to next millennium\n".format(1000 - (year % 1000)), sep="")
 
 
 ## End of the reality we know bölümü
